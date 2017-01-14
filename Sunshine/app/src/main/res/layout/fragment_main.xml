@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:context="com.nanodegree.tejomai.sunshine.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <ListView
+        android:id="@+id/listview_forecast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:scrollbarStyle="outsideOverlay"/>
+
+</FrameLayout>
