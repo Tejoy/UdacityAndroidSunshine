@@ -7,4 +7,9 @@ package com.nanodegree.tejomai.sunshine;
 public class SunshineUtil {
 
     public static final String INTENT_EXTRA_DETAIL = "detail";
+
+    public static final String KEY_PREF_LOCATION = "pref_location";
+    public static final String KEY_PREF_UNITS = "pref_units";
+
+    public static final String SHARED_PREF_NAME = "sunshine_pref";
 }
