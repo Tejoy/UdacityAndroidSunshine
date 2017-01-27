@@ -45,7 +45,7 @@ public class WeatherForecastFragment extends Fragment {
     private String key_mode = "mode";
     private final int days = 7;
     private final String DEFAULT_APP_ID = "<ENTER_YOUR_APP_ID>";
-    private final String APP_ID = "<ENTER_YOUR_APP_ID>";
+    private final String APP_ID = BuildConfig.OPEN_WEATHER_MAP_APP_ID;
 
     private String value_pincode;
     private String value_appid;
@@ -170,11 +170,15 @@ public class WeatherForecastFragment extends Fragment {
         int julianStartDay = Time.getJulianDay(System.currentTimeMillis(), dayTime.gmtoff);
         SimpleDateFormat shortenedDateFormat = new SimpleDateFormat("EEE MMM dd");
 
+        if(forecastJsonStr == null){
+            return arr;
+        }
+
         try {
             obj = new JSONObject(forecastJsonStr);
             JSONArray list = obj.getJSONArray("list");
             for(int i=0;i<days;++i){
-                result = new String("");
+                result = "";
 
                 long dateTime;
                 dateTime = dayTime.setJulianDay(julianStartDay+i);
