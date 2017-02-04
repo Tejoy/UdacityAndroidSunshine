@@ -4,7 +4,6 @@ Sunshine/.gradle/
 Sunshine/.idea/
 Sunshine/Sunshine.iml
 Sunshine/app/app.iml
-Sunshine/app/build.gradle
 Sunshine/build/generated/mockable-android-25.jar
 Sunshine/build/intermediates/dex-cache/cache.xml
 Sunshine/local.properties
